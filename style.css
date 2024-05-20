@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
+html {
+  height: 100%;
+  width: 100%;
+}
+:root {
+  --main-bg-color(#030F00)
+  --main-color(#039b33)
+  --secondary-color(#01372d)
+  --accent-color(#0aface)
+  --text-color(#efffeb)
+  --font-family(Open Sans, Roboto)
+}
+body{
+  background-color: #030F00;
+
+}
+h1 {
+  color: #efffeb;
+  font-size: 4rem;
+}
+button {
+  border-radius:10px;
+  background-color:#01372d;
+  color:#efffeb;
+  border: none;
+  transition: all 300ms;
+}
+button:hover {
+  background-color:#039b33 ;
+}
+section {
+  font-family: 'Open Sans','Roboto', sans-serif;
+  display: grid;
+  align-items: center;
+  place-items: center;
+  margin:10px;
+  padding:10px;
+}
+p{
+  font-size: 1em;
+  color: #efffeb;
+  max-width: 50vw;
+}
+ol {
+  color: #efffeb;
+}
+@media only screen and (max-width: 600px) {
+ p {
+   max-width: 95vw;
+ }
+}
+::-webkit-scrollbar {
+  color: #ffffff;
+  width:10px;
+}

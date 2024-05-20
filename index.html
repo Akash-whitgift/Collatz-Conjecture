@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-44P8YJV8X5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-44P8YJV8X5');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Collatz Conjecture</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src='script.js'></script>
+</head>
+
+<body>
+  <section>
+    <h1>Collatz Conjecture</h1>
+    <p>The Collatz conjecture, also known as the 3n+1 conjecture, is a simple but unsolved problem in mathematics. It starts with any positive integer, and then repeatedly applies the following rules:</p>
+<ol>
+    <li> If the number is even, divide it by 2.</li>
+    <li> If the number is odd, multiply it by 3 and add 1.</li>
+</ol>
+  <p>The conjecture states that, no matter what positive integer you start with, if you keep applying these rules, you will eventually reach the number 1. Once you reach 1, the process stops.</p>
+
+    <p>For example, if you start with 6:</p>
+<ol>
+    <li>1. 6 is even, so you divide it by 2 to get 3.</li>
+    <li> 3 is odd, so you multiply it by 3 and add 1 to get 10.</li>
+    <li> 10 is even, so you divide it by 2 to get 5.</li>
+    <li> 5 is odd, so you multiply it by 3 and add 1 to get 16.</li>
+    <li>16 is even, so you divide it by 2 to get 8.</li>
+    <li>8 is even, so you divide it by 2 to get 4.</li>
+    <li>4 is even, so you divide it by 2 to get 2.</li>
+    <li>2 is even, so you divide it by 2 to get 1.</li>
+</ol>
+    <p>And now, you've reached 1, and the process stops. The conjecture suggests that this pattern will always lead to 1, regardless of the initial number chosen.</p>
+
+    <p>Despite its simplicity, the Collatz conjecture remains an open question in mathematics, and it's unknown whether it holds true for all positive integers. It has fascinated mathematicians for many years, and it's considered one of the most famous unsolved problems in the field.</p>
+  </section>
+  <section>
+    <h1>Calculator</h1>
+    <p>Here is a calculator that tells you how many steps it takes for the number to reach 1 via Collatz Conjection</p>
+  <input type="number" id='x'><p><button onclick=init()>Calculate steps</button></p>
+  <p id='count'></p>
+  <p id='output'></p>
+  </section>
+</body>
+
+</html>
